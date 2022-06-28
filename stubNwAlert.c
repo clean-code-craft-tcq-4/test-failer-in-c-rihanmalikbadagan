@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stubNWAlert.h"
+#include "stubNwAlert.h"
 
 int networkAlertStub(float celcius) {
     printf("ALERT: Temperature is %.1f celcius.\n", celcius);
