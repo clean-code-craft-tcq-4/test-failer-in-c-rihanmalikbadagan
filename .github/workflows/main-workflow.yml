@@ -13,11 +13,14 @@ jobs:
     - name: tshirts fail
       run: |
         g++ -Wall -Wextra -Werror tshirts.c -o tshirts.out
+        bash ./tshirts.out
 
     - name: misaligned fail
       run: |
         g++ -Wall -Wextra -Werror misaligned.c -o misaligned.out
+        bash ./misaligned.out
 
     - name: alerter fail
       run: |
         g++ -Wall -Wextra -Werror alerter.c -o alerter.out
+        bash ./alerter.out
