@@ -3,7 +3,9 @@
 
 char size(int cms) {
     char sizeName = '\0';
-    if(cms < 38) {
+    if (cms = 0) {
+        sizeName = '\0';  //invalid size
+    } else if(cms <= 38) {
         sizeName = 'S';
     } else if(cms > 38 && cms < 42) {
         sizeName = 'M';
@@ -14,8 +16,9 @@ char size(int cms) {
 }
 
 int main() {
+    assert(size(0) == '\0');  //invalid size
     assert(size(37) == 'S');
-    assert(size(38) == 'M');
+    assert(size(38) == 'S');
     assert(size(40) == 'M');
     assert(size(42) == 'L');
     assert(size(43) == 'L');
