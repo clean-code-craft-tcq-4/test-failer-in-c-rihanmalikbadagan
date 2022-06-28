@@ -12,7 +12,7 @@ jobs:
 
     - name: tshirts fail
       run: |
-        g++ -Wall -Wextra -Werror tshirts.c stubNwAlert.c -o tshirts.out
+        g++ -Wall -Wextra -Werror tshirts.c -o tshirts.out
         ./tshirts.out
 
     - name: misaligned fail
@@ -22,5 +22,5 @@ jobs:
 
     - name: alerter fail
       run: |
-        g++ -Wall -Wextra -Werror alerter.c -o alerter.out
+        g++ -Wall -Wextra -Werror alerter.c stubNwAlert.c -o alerter.out
         ./alerter.out
