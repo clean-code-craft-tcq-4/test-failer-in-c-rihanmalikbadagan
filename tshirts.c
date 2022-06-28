@@ -3,7 +3,7 @@
 
 char size(int cms) {
     char sizeName = '\0';
-    if (cms = 0) {
+    if (cms == 0) {
         sizeName = '\0';  //invalid size
     } else if(cms <= 38) {
         sizeName = 'S';
